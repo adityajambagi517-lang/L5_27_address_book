@@ -100,7 +100,10 @@ def main():
     backup_book()
     restored = restore_book()
     print("Contacts restored:", len(restored), "| first:", sorted(restored)[0])
-    print("Restored contacts match the in-memory address book:", restored == contacts)
+    print(
+        "Restored contacts match the in-memory address book:",
+        restored == contacts,
+    )
 
 
 if __name__ == "__main__":
