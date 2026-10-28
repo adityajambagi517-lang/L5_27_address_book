@@ -1,0 +1,5 @@
+PENDING GENERATED OUTPUT
+
+This placeholder is not actual Flake8 output. Generate the real report by running:
+python -m pip install flake8
+flake8 address_book.py --format=default > flake8_report.txt

@@ -1,0 +1,5 @@
+PENDING GENERATED OUTPUT
+
+This placeholder is not actual Bandit output. Generate the real report by running:
+python -m pip install bandit
+bandit -r address_book.py -f txt -o bandit_report.txt

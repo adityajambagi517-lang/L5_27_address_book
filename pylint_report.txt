@@ -1,0 +1,7 @@
+PENDING GENERATED OUTPUT
+
+This placeholder is not actual PyLint output. Generate the real report by running:
+python -m pip install pylint
+pylint address_book.py > pylint_report.txt
+
+Check the final score is above 9.5 as required by the lab.
