@@ -1,0 +1,22 @@
+BASELINE STATIC-ANALYSIS NOTES (manual source review; tool output not yet executed)
+
+Target: address_book.py (initial commit 12f84cd)
+
+Bandit/security findings to verify by running Bandit:
+- pickle is used for backup/restore; loading untrusted pickle data can execute arbitrary code.
+- MD5 is used for a contact identifier; avoid it for security-sensitive purposes.
+- A hard-coded SYNC_PASSWORD constant is present but unused.
+
+PyLint findings to verify by running PyLint:
+- Function names use camelCase rather than snake_case.
+- Several functions have no docstrings.
+- Broad except Exception hides unexpected failures in updateCity.
+- Unnecessary range(len(...)) loop in printDirectory.
+- Unused SYNC_PASSWORD constant.
+- main() runs on import rather than behind an entry-point guard.
+
+Flake8 findings to verify by running Flake8:
+- Missing whitespace around assignment in found=[] (E225).
+- Excess blank lines before printDirectory (E303).
+
+These are manual source-review findings, not actual tool stdout. Run the lab commands to generate authoritative reports before submission.
